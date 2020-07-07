@@ -72,7 +72,34 @@ Programming with TypeScript with ES 6 Concepts
       1. => 
 8. Functions
 9.  Object Oriented Programming
+    1.  Classes
+        1.  Access Specifiers
+            1.  Public (default)
+            2.  Private
+            3.  Protected
+        2.  Access Modifiers
+            1.  static
+    2.  Methods
+    3.  Properties
+        1.  get and set property methods
+        2.  ES 6 concept for OOPs but needs the ES 6 configuration to comopile the ES 6 to ES 5 (not ES 3)
+            1.  the tsconfig.json file
+                1.  Define the TypeScript compilation targets for ES 6, 7, 8, next
+                2.  
+    4.  Inheritence
+        1.  extends keyword
+    5.  Interfaces
+        1.  Implements
 10. Modules
+    1.  Independent behavioral objects for front-end programming
+        1.  Exports the types
+            1.  Class, function, constant
+        2.  Other modules must import them
+    2.  Module-loader (?) to execute application with multi-modules
+        1.  systemjs
+            1.  system.config.js
+        2.  webpack
+            1.  webpack.config.js
 
 Assignment 1: 
 Create a TypeScript file that will do the following
@@ -81,3 +108,20 @@ Create a TypeScript file that will do the following
    2. Print number of words in the string (string in between two blank spaces)
    3. List all strings having character 'a' in it. (Hint: Use 'contains()' method)
    4. Print number of matching Words in string. e.g. the word 'the' occurs 10 times.  
+
+Assignment 2:
+
+1. Create a Product class, this class will have properties like ProductId, ProductName, Category, Manufacturer, Description, Price
+2. Create a ProductLogic class, this class will contains following methods
+   1. List all Products
+   2. List all products by (Category/Manufacturer)
+   3. Create a new Product
+      1. Validate the Product creation based on Following rules
+         1. ProductId must be unique
+         2. ProductName must be string
+         3. Category Name, Manufacturer must be string
+         4. Description should not be more than 100 charachetrs
+         5. Price should not be -ve
+   4. Update the product (with all validations)
+   5. Delete the Product 
+   6. Save all products in Array<Product>
